@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Poppins font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Lobster font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="pics/logo.png" alt="Hangout Café">
+                <span>Hangout Café</span>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Coffee</a></li>
+                <li><a href="#">Regular Drinks</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Special Drinks</a></li>
+                <span class="cart-icon">
+                    <img src="pics/cart.png" class="color-tinted" alt="Cart">
+                </span>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Left Side: Orders List -->
+        <div class="order-list">
+            <div class="order-header">
+                    <img src="pics/bin.gif" style="width: 30px; height: 30px; margin-left: 2%; margin-right: -12%;">
+                <span class = "description" style="margin-left: 10px;">
+                    <p>Description</p>
+                </span>
+                <span class = "price" style="margin-left: 100px;">
+                    <p>Price</p>
+                </span>
+                <span>
+                    <p>Quantity</p>
+                </span>
+                <span>
+                    <p>Total</p>
+                </span>
+            </div>
+
+            <hr style='border: 1.5px solid #081A48; width: 100%;'>
+
+            <!-- Individual Items -->
+            <div class="order-item">
+                <img src="pics/americano.png" alt="Cafe Americano" style="margin-right: -10%;">
+                <span class="o-details">
+                    <p>Cafe Americano</p>
+                </span>
+                <span class="o-price">
+                    <p>₱ 115.0</p>
+                </span>
+
+                <span class="o-quantity">
+                    <button>-</button>
+                    <input type="number" value="1" min="0" style="width: 50px;">
+                    <button>+</button>
+                </span>
+
+                <span class="o-total">
+                    ₱ 100.0
+                </span>
+            </div>
+
+            <div class="order-item">
+                <img src="pics/cafe_latte.png" alt="Cafe Latte" style="margin-right: -10%;">
+                <span class="o-details">
+                    <p>Cafe Latte</p>
+                </span>
+                <span class="o-price">
+                    <p>₱ 115.0</p>
+                </span>
+
+                <span class="o-quantity">
+                    <button>-</button>
+                    <input type="number" value="1" min="0" style="width: 50px;">
+                    <button>+</button>
+                </span>
+
+                <span class="o-total">
+                    ₱ 100.0
+                </span>
+            </div>
+            
+            <div class="order-item">
+                <img src="pics/cafe_mocha.png" alt="Cafe Mocha" style="margin-right: -10%;">
+                <span class="o-details">
+                    <p>Cafe Mocha</p>
+                </span>
+                <span class="o-price">
+                    <p>₱ 115.0</p>
+                </span>
+
+                <span class="o-quantity">
+                    <button>-</button>
+                    <input type="number" value="1" min="0" style="width: 50px;">
+                    <button>+</button>
+                </span>
+
+                <span class="o-total">
+                    ₱ 115.0
+                </span>
+            </div>
+
+            <div class="order-item">
+                <img src="pics/iced_latte.png" alt="iced_latte" style="margin-right: -10%;">
+                <span class="o-details">
+                    <p>Iced Latte (22oz)</p>
+                </span>
+                <span class="o-price">
+                    <p>₱ 130.0</p>
+                </span>
+
+                <span class="o-quantity">
+                    <button>-</button>
+                    <input type="number" value="1" min="0" style="width: 50px;">
+                    <button>+</button>
+                </span>
+
+                <span class="o-total">
+                    ₱ 130.0
+                </span>
+            </div>
+
+            <div class="order-item">
+                <img src="pics/iced_white_choco.png" alt="iced_latte" style="margin-right: -10%;">
+                <span class="o-details">
+                    <p>Iced White Chocolate (16oz)</p>
+                </span>
+                <span class="o-price">
+                    <p>₱ 130.0</p>
+                </span>
+
+                <span class="o-quantity">
+                    <button>-</button>
+                    <input type="number" value="1" min="0" style="width: 50px;">
+                    <button>+</button>
+                </span>
+
+                <span class="o-total">
+                    ₱ 130.0
+                </span>
+            </div>
+
+            <div class="order-item">
+                <img src="pics/iced_matcha_green_tea.png" alt="iced_latte" style="margin-right: -10%;">
+                <span class="o-details">
+                    <p>Iced Matcha Green Tea (22oz)</p>
+                </span>
+                <span class="o-price">
+                    <p>₱ 160.0</p>
+                </span>
+
+                <span class="o-quantity">
+                    <button>-</button>
+                    <input type="number" value="1" min="0" style="width: 50px;">
+                    <button>+</button>
+                </span>
+
+                <span class="o-total">
+                    ₱ 160.0
+                </span>
+            </div>
+
+            <div class="order-item">
+                <img src="pics/iced_coffee_jelly.png" alt="iced_coffee_jelly" style="margin-right: -10%;">
+                <span class="o-details">
+                    <p>Iced Coffee Jelly (22oz)</p>
+                </span>
+                <span class="o-price">
+                    <p>₱ 160.0</p>
+                </span>
+
+                <span class="o-quantity">
+                    <button>-</button>
+                    <input type="number" value="1" min="0" style="width: 50px;">
+                    <button>+</button>
+                </span>
+
+                <span class="o-total">
+                    ₱ 160.0
+                </span>
+            </div>
+
+            <div class="order-item">
+                <img src="pics/iced_caramel_macchiato.png" alt="iced_caramel_macchiato" style="margin-right: -10%;">
+                <span class="o-details">
+                    <p>Iced Caramel Macchiato (16oz)</p>
+                </span>
+                <span class="o-price">
+                    <p>₱ 140.0</p>
+                </span>
+
+                <span class="o-quantity">
+                    <button>-</button>
+                    <input type="number" value="1" min="0" style="width: 50px;">
+                    <button>+</button>
+                </span>
+
+                <span class="o-total">
+                    ₱ 140.0
+                </span>
+            </div>
+
+            <!-- Repeat for Other Items -->
+            <!-- Subtotal -->
+            <div class="subtotal">
+                <p>Subtotal:</p>
+                <span>₱ 1,695.00</span>
+            </div>
+        </div>
+
+        <!-- Right Side: Delivery Form -->
+        <div class="details-form">
+            <!-- <img src="pics/12.png" alt="Floating image" class="floating-image16"> -->
+            <h2>Delivery</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+                <input type="text" placeholder="Address" required>
+                <input type="text" placeholder="Apartment, suite, etc. (optional)">
+                <input type="text" placeholder="City" required>
+                <input type="tel" placeholder="Contact" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Note (optional)"></textarea>
+
+                <h3>Choose Branch</h3>
+                <select required>
+                    <option value="" disabled selected>Select Branch</option>
+                    <option value="branch1">Branch 1</option>
+                    <option value="branch2">Branch 2</option>
+                </select>
+
+                <div class="map">
+                    <img src="pics/map.png" alt="Map">
+                </div>
+
+                <div class="confirm">
+                    <p>Subtotal: <span>₱ 1,695.00</span></p>
+                    <p>Total: <span>₱ 1,695.00</span></p>
+                    <button type="submit">Confirm Details</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Images -->
+    <img src="pics/1.png" alt="Floating image" class="floating-image1">
+    <img src="pics/4.png" alt="Floating image" class="floating-image4">
+
+    <img src="pics/7.png" alt="Floating image" class="floating-image7">
+    <img src="pics/10.png" alt="Floating image" class="floating-image10">
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <img src="pics/9.png" alt="Floating image" class="floating-image9">
+        <img src="pics/13.png" alt="Floating image" class="floating-image13">
+        <p>&copy; 2024 Hangout Café. All Rights Reserved.</p>
+    </footer>
+
+    <script src = scripts.js></script>
+
+</body>
+</html>
