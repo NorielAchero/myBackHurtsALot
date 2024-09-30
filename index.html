@@ -11,6 +11,16 @@
     <!-- Lobster font -->
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init({
+        publicKey: "YMqF_S11duURshZFq",
+    });
+    })();
+    </script>
 </head>
 <body>
     <!-- Navbar -->
@@ -227,24 +237,26 @@
         <div class="details-form">
             <!-- <img src="pics/12.png" alt="Floating image" class="floating-image16"> -->
             <h2>Delivery</h2>
-            <form>
+            <form id="orderForm">
                 <div class="form-group">
-                    <input type="text" placeholder="First Name" required>
-                    <input type="text" placeholder="Last Name" required>
+                    <input type="text" id="firstName" placeholder="First Name" required>
+                    <input type="text" id="lastName" placeholder="Last Name" required>
                 </div>
-                <input type="text" placeholder="Address" required>
-                <input type="text" placeholder="Apartment, suite, etc. (optional)">
-                <input type="text" placeholder="City" required>
-                <input type="tel" placeholder="Contact" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Note (optional)"></textarea>
-
+                <input type="text" id="address" placeholder="Address" required>
+                <input type="text" id="city" placeholder="City" required>
+                <input type="tel" id="contact" placeholder="Contact" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <textarea id="note" placeholder="Note (optional)"></textarea>
+            
                 <h3>Choose Branch</h3>
-                <select required>
+                <select id="branch" required>
                     <option value="" disabled selected>Select Branch</option>
                     <option value="branch1">Branch 1</option>
                     <option value="branch2">Branch 2</option>
                 </select>
+            
+                <button type="submit">TEST EMAIL BUTT</button>
+            </form>
 
                 <div class="map">
                     <img src="pics/map.png" alt="Map">
@@ -253,9 +265,9 @@
                 <div class="confirm">
                     <p>Subtotal: <span>₱ 1,695.00</span></p>
                     <p>Total: <span>₱ 1,695.00</span></p>
-                    <button type="submit">Confirm Details</button>
+                    <button type="submit">Confirm Details WAG TO FAKE BUTTON</button>
                 </div>
-            </form>
+        
 
         </div>
     </div>
